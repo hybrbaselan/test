@@ -1,12 +1,17 @@
 import React from 'react';
-import { Button } from 'antd';
+import styled from 'styled-components';
+
+const StyledParagraph = styled.p`
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+`;
 
 const MyComponent = ({ text }) => {
   return (
-      <>
-      <p>{text}</p>
-      <Button type="primary">Click me</Button>
-      </>
+    <>
+      <StyledParagraph>{text}</StyledParagraph>
+    </>
   );
 };
 
