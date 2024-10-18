@@ -1,7 +1,7 @@
 import React from 'react';
 
 const MyComponent = ({ text }) => {
-  return <div>{text}</div>;
+  return React.createElement('div', null, text);
 };
 
 export default MyComponent;
